@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600&display=swap");
+
+* {
+  font-family: Be Vietnam Pro, Hanken Grotesk;
+}
+.main {
+  background-color: #f1f1f3;
+  width: 100%;
+}
+
+
+.body {
+  font-family: Be Vietnam Pro;
+  width: 100%;
+  background-color: #f1f1f3;
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+    height: 50px;
+    background: #ff9500;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navBar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .logo {
+    display: flex;
+  }
+  
+  .buttonlog {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .menu {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .menu li {
+    float: left;
+  }
+  
+  .menu li:last-child {
+    float: inline-end;
+  }
+  
+  .menu li a {
+    display: flex;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  .menu li a:hover {
+    background-color: #ff9500;
+    color: white;
+  }
+  
+  .button {
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  
+  .button:hover {
+    background-color: #ff9500;
+    color: white;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .navBar {
+      width: 100%;
+      padding: 2rem;
+      align-items: flex-start;
+    }
+  
+    .menu {
+      display: none; /* Hide the menu on smaller screens */
+    }
+
+    .header{
+      width: 100%;
+      height: auto;
+      background: #ff9500;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .buttonlog {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 10px;
+      }
+    
+      .button {
+        margin-left: auto;
+      }
+  }
+  
+  
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    background-color: #f1f1f3;
+
+    & .title{
+        width: 350px;
+        padding: 2rem;
+        text-align: center;
+    }
+    & .detail{
+        width: 850px;
+        padding: 1rem;
+    }
+}
+
+.contactForm{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+    gap: 5px;
+    & .form{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding: 2rem;
+        background-color: #ffffff;
+     
+        & input{
+            border: none;
+            padding: 1rem;
+            width: 90%;
+        }
+        & .info{
+            display: flex;
+        }
+        & .name{
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1rem;
+            padding: 1rem;
+            & .fName{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                flex: 1;
+            }
+            & .LName{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                flex: 1;
+            }
+        }
+        & .contact{
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1rem;
+            padding: 1rem;
+            & .email{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                flex: 1;
+            }
+            & .phone{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                flex: 1;
+            }
+        }
+        & .subject{
+            text-align: center;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin: 1rem;
+            padding: 1rem;
+        }
+        & .message{
+        
+            text-align: center;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin: 2rem;
+
+            & textarea{
+                border: none;
+                margin: 1rem;
+                width: 90%;
+            }
+        }
+
+        & .sendBtn{
+            display: flex;
+            border: none;
+            padding: 15px 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: #ff9500;
+            align-items: center;
+            color: #FFFFFF;
+            margin: auto;
+        }
+    }
+    
+    & .contactButton{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 29%;
+        background-color: #ffffff;
+
+        & .email{
+            margin: auto;
+            padding: 1rem;
+            margin-bottom: 10px;
+            
+            & button {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;            
+            background-color: #FCFCFD;
+        }
+        }
+        
+        & .phone{
+            margin: auto;
+            padding: 1rem;
+            margin-bottom: 10px;
+            
+            & button {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;            
+            background-color: #FCFCFD;
+        }
+        }
+        & .location{
+            margin: auto;
+            padding: 1rem;
+            margin-bottom: 10px;
+            
+            & button {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background-color: #FCFCFD;
+        }
+        }
+       & .socailProfiles{
+        margin: auto;
+        padding: 1rem;
+        
+        & button{
+        border: none;
+        background-color: #FCFCFD;
+        }
+       }
+    }
+}
+
+
+.footer{
+    margin: auto;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    padding: 20px;
+   
+    & .footContainer{
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+      flex-wrap: wrap;
+      padding: 1rem;
+      align-self: stretch;
+    }
+    & .contact{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+  
+      & a{
+        text-decoration: none;
+        color: #262626;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        row-gap: 5px;
+      }
+    }
+    & .webNav{
+      display: flex;
+      width: 600px;
+      flex-wrap: wrap;
+      gap: 5%;
+  
+      & .home{
+        flex: 1;
+        display: grid;
+        
+      & a{
+        text-decoration: none;
+        color: #656567;
+      }
+    }
+      & .aboutUs{
+        flex: 1;
+        display: grid;
+        & a{
+          text-decoration: none;
+          color: #656567;
+        }
+      }
+      & .socailProfiles{
+        flex: 1;
+        flex-direction: column;
+  
+        & .socaiProfilesLink{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        & a{
+          text-decoration: none;
+          color: #656567;
+        }
+     }
+    }
+  }
+  .copyright {
+    text-align: center;
+  }

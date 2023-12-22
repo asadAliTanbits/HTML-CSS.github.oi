@@ -1,0 +1,634 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600&display=swap");
+
+* {
+  font-family: Be Vietnam Pro, Hanken Grotesk;
+}
+.main {
+  background-color: #f1f1f3;
+  width: 100%;  
+}
+.body {
+  font-family: Be Vietnam Pro;
+  /* display: grid; */
+  width: 100%;
+  background-color: #f1f1f3;
+  /* grid-template-areas:
+    "header header header header header"
+    "navBar navBar navBar navBar"
+    "hero-section hero-section hero-section hero-section"
+    "brandList brandList brandList brandList"
+    "video video video video"
+    "footer footer footer footer"; */
+}
+
+.header {
+  grid-area: header;
+  width: 100%;
+  height: 50px;
+  background: #ff9500;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+
+
+.logo {
+  display: flex;
+}
+
+.buttonlog {
+  display: flex;
+  margin-left: auto;
+}
+
+.menu {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li:last-child {
+  float: inline-end;
+}
+
+.menu li a {
+  display: flex;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.menu li a:hover {
+  background-color: #ff9500;
+  color: white;
+}
+}
+.button {
+  border: none;
+  padding: 15px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.button:hover {
+  background-color: #ff9500;
+  color: white;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .navBar {
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+  .header{
+    width: 100%;
+    height: auto;
+    background: #ff9500;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttonlog {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+}
+
+
+.hero-section {
+  grid-area: hero-section;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.introSection {
+  font-family: Hanken Grotesk;
+  font-weight: 600;
+  width: 70%;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  & span {
+    color: #ff9500;
+  }
+}
+
+.brandList {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+  & ul {
+    list-style-type: none;
+    overflow: hidden;
+
+    & li {
+      float: left;
+    }
+
+    & li a {
+      display: block;
+      text-align: center;
+      padding: 20px 20px;
+      text-decoration: none;
+      color: black;
+      font-weight: 400;
+      font-size: 18px;
+      border: 1px solid #f1f1f3;
+    }
+
+    & a:hover {
+      background-color: #ff9500;
+      color: black;
+    }
+
+    & img {
+      display: flex;
+      width: auto;
+    }
+  }
+}
+
+.video {
+  grid-area: video;
+  text-align: center;
+   margin-bottom: 2rem;
+  & img{
+    width:60% ;
+    height:auto;
+  }
+}
+
+.BenefitSection {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  
+}
+
+.Benefits {
+  margin: auto;
+  width: 80%;
+  justify-content: center;
+  & p {
+    font-weight: 400;
+    font-family: Be Vietnam Pro;
+    font-size: 18px;
+  }
+}
+
+.viewAll {
+  margin: auto;
+  align-items: bottom right;
+  & button {
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  & button:hover {
+    background-color: #ff9500;
+    color: black;
+  }
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 40px;
+  gap: 1%;
+  row-gap: 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  align-self: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 42.555%;
+  margin: auto;
+  padding: 3rem;
+  & h2 {
+    text-align: right;
+    font-weight: 600;
+    font-size: 50px;
+    padding-right: 5px;
+  }
+  & h3 {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  & p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px;
+    color: #4c4c4d;
+  }
+  & button {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    border-radius: 5px;
+    margin-left: auto;
+    background: #f1f1f3;
+  }
+}
+/* Courses section */
+.courses {
+  width: 90%;
+  margin: auto;
+}
+
+.title {
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+}
+
+.OurCourses {
+  margin: auto;
+  width: 80%;
+  justify-content: center;
+  & p {
+    font-weight: 400;
+    font-family: Be Vietnam Pro;
+    font-size: 18px;
+  }
+}
+
+/* For Courses Cards */
+.coursesCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: auto;
+  & .contentCard {
+    width: 700px;
+    background-color: #FCFCFD;
+
+    & span {
+      font-weight: 600;
+    }
+    & img{
+        width: 99%;
+        justify-content: center;
+    }
+
+    & .content {
+      margin: 10px;
+      & .cardTitle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px;
+
+       
+      }
+
+      & .btnGet {
+        border: none;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        border-radius: 5px;
+        margin: auto;
+        background: #f1f1f3;
+      }
+      .btnGet:hover {
+        background-color: #ff9500;
+        color: black;
+      }
+    }
+  }
+}
+
+/* For Testimonials Heading */
+.testimonials {
+    width: 90%;
+    margin: auto;
+
+    & .title {
+    display: flex;
+    margin: auto;
+    padding: 1rem;
+  }
+  & .ourTestimonials {
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    & p {
+      font-weight: 400;
+      font-family: Be Vietnam Pro;
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+}
+
+.storiesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 10px;
+    row-gap: 30px;
+    & .storyCard{
+        margin: auto;
+        width: 680px; 
+        height: 250px;
+        padding: 10px;
+        background-color: #FCFCFD;      
+    }
+    & .storyContent{
+        justify-content: center;
+        padding: 10px;
+        gap: 1%;
+    }
+
+    & .profile{
+        display: flex;
+        width: 90%;
+        padding: 5%;
+        align-items: center;
+        font-weight: 500;
+        justify-content: space-between;
+
+        & span{
+          margin-right: auto;
+          padding: 10px;
+        }
+
+        & .btnStory {
+          padding: 15px;
+          border: none;
+        }
+    }
+}
+
+.pricing{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  & .title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 88%;
+    margin-bottom: 10px;
+    padding: 1rem;
+  }
+  .buttonPackage{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
+  & .pricingCard{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+
+  }
+  & .content{
+    width: 675px;
+    background-color: #FCFCFD;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+  }
+  & .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & h2{
+      font-weight: 600;
+      
+    }
+  }
+  & .freeplan{
+    justify-content: center;
+    background-color: #FFEACC;
+    padding: 5px;
+  }
+  & .details{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    & img{
+      display: flex;
+     
+
+    }
+  }
+  & .btnGetStart {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    margin: auto;
+    background: #f1f1f3;
+  }
+  .btnGetStart:hover {
+    background-color: #ff9500;
+    color: black;
+  }
+  & p{
+    justify-content: center;
+  }
+  & label{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.questions {
+  display: flex;
+  margin: auto;
+  margin-top: 2%;
+  justify-content: center;
+
+  & .FAQs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    width: 86%;
+    background-color: #ffffff;
+    padding: 2%;
+
+    & .FAQcard1 {
+      position: relative;
+      width: 550px;
+      margin: auto;
+      & button {
+        padding: 1.5rem 2rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 6px;
+      }
+    }
+    & .FAQcard2 {
+      width: 650px;
+      margin: auto;
+
+      & .multipleCourseFAQ {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 5%;
+        padding: 1%;
+
+        & button {
+          border: none; 
+          border-radius: 6px;
+        }
+        & .checkbtn {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      & .multipleCourseFAQs {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #f1f1f3;
+        margin-top: 5%;
+        padding: 1%;
+        & button {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  margin: auto;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  padding: 20px;
+ 
+  & .footContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+    align-self: stretch;
+  }
+  & .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    & a{
+      text-decoration: none;
+      color: #262626;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      row-gap: 5px;
+    }
+  }
+  & .webNav{
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+    gap: 5%;
+
+    & .home{
+      flex: 1;
+      display: grid;
+      
+    & a{
+      text-decoration: none;
+      color: #656567;
+    }
+  }
+    & .aboutUs{
+      flex: 1;
+      display: grid;
+      & a{
+        text-decoration: none;
+        color: #656567;
+      }
+    }
+    & .socailProfiles{
+      flex: 1;
+      flex-direction: column;
+
+      & .socaiProfilesLink{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      & a{
+        text-decoration: none;
+        color: #656567;
+      }
+   }
+  }
+}
+.copyright {
+  text-align: center;
+}

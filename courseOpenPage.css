@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=DM+Serif+Display:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:ital,wght@0,200;0,300;0,400;0,500;0,600;1,600&display=swap');
+
+* {
+  font-family: Be Vietnam Pro, Hanken Grotesk;
+}
+.main {
+  background-color: #f1f1f3;
+  width: 100%;
+}
+
+.body {
+  font-family: Be Vietnam Pro;
+  width: 100%;
+  background-color: #f1f1f3;
+}
+section{
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+
+.header {
+  grid-area: header;
+  width: 100%;
+  height: 50px;
+  background: #ff9500;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  display: flex;
+}
+
+.buttonlog {
+  display: flex;
+  margin-left: auto;
+}
+
+.menu {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li:last-child {
+  float: inline-end;
+}
+
+.menu li a {
+  display: flex;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.menu li a:hover {
+  background-color: #ff9500;
+  color: white;
+}
+
+.button {
+  border: none;
+  padding: 15px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.button:hover {
+  background-color: #ff9500;
+  color: white;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+  .logo{
+    align-items: flex-start;
+  }
+  .navBar {
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+  .header{
+    width: 100%;
+    height: auto;
+    background: #ff9500;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttonlog {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+  }
+}
+
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: #FFFFFF;
+
+    .video img{ 
+        width: 100%;
+    }
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.modules{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+    & .moduleDetail{
+        width: 630px;
+        padding: 2rem;
+        background-color: #ffffff;
+        
+        & h2{
+            font-weight: 600;
+            font-size: 60px;
+            text-align: right;
+        }
+        & h4{
+          font-weight: 400;
+        }
+        & h5{
+            color: #59595A;
+            margin-top: -5px;
+        }
+        & h6{
+            color: #59595A;
+        }
+        & .moduleInfo{
+          margin-top: 2rem;
+        }
+        & .creditHours{
+            display: flex;
+            justify-content: space-between;
+
+            & .detail{
+                display: flex;
+                flex-direction: column;
+            }
+            & .hours{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 10px;
+            }
+
+        }
+    }
+}
+
+
+
+
+.footer{
+    margin: auto;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    padding: 20px;
+   
+    & .footContainer{
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+      flex-wrap: wrap;
+      padding: 1rem;
+      align-self: stretch;
+    }
+    & .contact{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+  
+      & a{
+        text-decoration: none;
+        color: #262626;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        row-gap: 5px;
+      }
+    }
+    & .webNav{
+      display: flex;
+      width: 600px;
+      flex-wrap: wrap;
+      gap: 5%;
+  
+      & .home{
+        flex: 1;
+        display: grid;
+        
+      & a{
+        text-decoration: none;
+        color: #656567;
+      }
+    }
+      & .aboutUs{
+        flex: 1;
+        display: grid;
+        & a{
+          text-decoration: none;
+          color: #656567;
+        }
+      }
+      & .socailProfiles{
+        flex: 1;
+        flex-direction: column;
+  
+        & .socaiProfilesLink{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        & a{
+          text-decoration: none;
+          color: #656567;
+        }
+     }
+    }
+  }
+  .copyright {
+    text-align: center;
+  }
